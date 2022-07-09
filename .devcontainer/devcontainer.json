@@ -1,0 +1,58 @@
+{
+  "name": "danielknell.co.uk",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "VARIANT": "18-bullseye"
+    }
+  },
+  "settings": {
+    "files.exclude": {
+      ".pnp.*": true,
+      ".parcel-cache": true,
+      ".yarn": true,
+      "node_modules": true
+    },
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    },
+    "editor.codeActionsOnSaveTimeout": 100000,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveTimeout": 100000,
+    "editor.formatOnType": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.enable": true,
+    "html.format.enable": false,
+    "htmlhint.enable": true,
+    "prettier.requireConfig": false,
+    "prettier.useEditorConfig": true,
+    "stylelint.autoFixOnSave": true,
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+    }
+  },
+  // "forwardPorts": [],
+  "postCreateCommand": "yarn install",
+  "remoteUser": "node",
+  "features": {
+    "git": "latest",
+    "github-cli": "latest",
+    "fish": "latest"
+  }
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Knell</title>
+    <meta
+      name="keywords"
+      content="Daniel, Knell, Daniel Knell, Artisan of Code, TheArtisan"
+    />
+    <meta
+      name="description"
+      content="Artisan of Code, Friendly Giant, Builder of Things."
+    />
+    <meta property="og:title" content="Daniel Knell" />
+    <meta property="og:url" content="https://danielknell.co.uk/" />
+    <meta property="og:image" content="https://danielknell.co.uk/avatar.jpg" />
+    <meta
+      property="og:description"
+      content="Artisan of Code, Friendly Giant, Builder of Things."
+    />
+    <meta property="og:type" content="profile" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Daniel Knell" />
+    <meta name="twitter:image" content="https://danielknell.co.uk/avatar.jpg" />
+    <meta
+      property="twitter:description"
+      content="Artisan of Code, Friendly Giant, Builder of Things."
+    />
+    <style>
+      @import "https://rsms.me/inter/inter.css";
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+    </style>
+    <script type="module">
+      import Alpine from "alpinejs";
+      window.Alpine = Alpine;
+      Alpine.start();
+    </script>
+  </head>
+
+  <body
+    x-data="{ footer: null, set(service, tagline) { this.footer = service ? tagline + ' on ' + service : null }  }"
+  >
+    <div class="flex flex-col h-screen text-slate-700">
+      <h1 class="text-6xl font-bold text-center py-16">Daniel Knell</h1>
+      <div class="flex-grow">
+        <ul
+          class="sm:grid grid-cols-3 gap-8 sm:mx-auto sm:max-w-md mx-8"
+          @mouseover.away="set(null, null)"
+        >
+          <li class="clear-both py-4 sm:py-0">
+            <a
+              href="https://artisanofcode.com/"
+              @mouseover="set('Artisan of Code', 'Read my blog')"
+              @mouseout="set(null, null)"
+              class="sm:hover:animate-pop focus:animate-pop block sm:opacity-50 hover:opacity-100 focus:opacity-100 origin-center block"
+            >
+              <svg class="h-32 float-left sm:float-none mr-4" viewBox="0 0 512 512">
+                <rect width="512" height="512" rx="15%" fill="#db2777" />
+                <path
+                  d="M205.474,350.339l-17.679,58.563l-89.638,0l100.991,-305.964l113.543,-0l100.992,305.964l-89.639,0l-17.679,-58.563l-100.891,-0Zm82.129,-142.149l-63.367,-0l30.488,100.993l2.391,-0l30.488,-100.993Z"
+                  fill="#fff"
+                />
+              </svg>
+              <h2 class="sm:hidden text-4xl font-bold pb-4">Artisan of Code</h2>
+              <p class="sm:hidden text-lg font-semibold text-slate-500">Read my blog</p>
+            </a>
+          </li>
+          <li class="clear-both py-4 sm:py-0">
+            <a
+              href="https://github.com/danielknell/"
+              @mouseover="set('GitHub', 'Fork my repos')"
+              @mouseout="set(null, null)"
+              class="sm:hover:animate-pop focus:animate-pop block sm:opacity-50 hover:opacity-100 focus:opacity-100 origin-center block"
+            >
+              <svg class="h-32 float-left sm:float-none mr-4" viewBox="0 0 512 512">
+                <rect width="512" height="512" rx="15%" fill="#181717" />
+                <path
+                  fill="#fff"
+                  d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-44c-71 16-86-34-86-34-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"
+                />
+              </svg>
+              <h2 class="sm:hidden text-4xl font-bold pb-4">GitHub</h2>
+              <p class="sm:hidden text-lg font-semibold text-slate-500">
+                Fork my repos
+              </p>
+            </a>
+          </li>
+          <li class="clear-both py-4 sm:py-0">
+            <a
+              href="https://ko-fi.com/danielknell"
+              @mouseover="set('Ko-fi', 'Buy me a drink')"
+              @mouseout="set(null, null)"
+              class="sm:hover:animate-pop focus:animate-pop block sm:opacity-50 hover:opacity-100 focus:opacity-100 origin-center block"
+            >
+              <svg class="h-32 float-left sm:float-none mr-4" viewBox="0 0 512 512">
+                <rect width="512" height="512" rx="15%" fill="#478db1" />
+                <path
+                  fill="#fff"
+                  d="M371 140H100c-18 0-20 20 -20 20v184s3 40 40 40h188c41 0 40-40 40 -40v-26h23a89 89 0 000-178m0 132h-23v-86h23a43 43 0 010 86"
+                />
+                <path
+                  fill="#f1464d"
+                  d="M286 219c-10-30-63-33-77 3-15-36-67-33-77-3-7 19-4 35 9 54s68 64 68 64 56-45 68-64 15-35 9-54"
+                />
+              </svg>
+              <h2 class="sm:hidden text-4xl font-bold pb-4">Ko-fi</h2>
+              <p class="sm:hidden text-lg font-semibold text-slate-500">
+                Buy me a drink
+              </p>
+            </a>
+          </li>
+          <li class="clear-both py-4 sm:py-0">
+            <a
+              href="https://www.instagram.com/danielknell/"
+              @mouseover="set('Instagram', 'Browse my photos')"
+              @mouseout="set(null, null)"
+              class="sm:hover:animate-pop focus:animate-pop block sm:opacity-50 hover:opacity-100 focus:opacity-100 origin-center block"
+            >
+              <svg class="h-32 float-left sm:float-none mr-4" viewBox="0 0 512 512">
+                <rect width="512" height="512" rx="15%" id="b" />
+                <use fill="url(#a)" xlink:href="#b" />
+                <use fill="url(#c)" xlink:href="#b" />
+                <radialGradient id="a" cx=".4" cy="1" r="1">
+                  <stop offset=".1" stop-color="#fd5" />
+                  <stop offset=".5" stop-color="#ff543e" />
+                  <stop offset="1" stop-color="#c837ab" />
+                </radialGradient>
+                <linearGradient id="c" x2=".2" y2="1">
+                  <stop offset=".1" stop-color="#3771c8" />
+                  <stop offset=".5" stop-color="#60f" stop-opacity="0" />
+                </linearGradient>
+                <g fill="none" stroke="#fff" stroke-width="30">
+                  <rect width="308" height="308" x="102" y="102" rx="81" />
+                  <circle cx="256" cy="256" r="72" />
+                  <circle cx="347" cy="165" r="6" />
+                </g>
+              </svg>
+              <h2 class="sm:hidden text-4xl font-bold pb-4">Instagram</h2>
+              <p class="sm:hidden text-lg font-semibold text-slate-500">
+                Browse my photos
+              </p>
+            </a>
+          </li>
+          <li class="clear-both py-4 sm:py-0">
+            <a
+              href="https://twitter.com/danielknell"
+              @mouseover="set('Twitter', 'Slide into my DM\'s')"
+              @mouseout="set(null, null)"
+              class="sm:hover:animate-pop focus:animate-pop block sm:opacity-50 hover:opacity-100 focus:opacity-100 origin-center block"
+            >
+              <svg class="h-32 float-left sm:float-none mr-4" viewBox="0 0 512 512">
+                <rect width="512" height="512" rx="15%" fill="#1da1f2" />
+                <path
+                  fill="#fff"
+                  d="M437 152a72 72 0 01-40 12a72 72 0 0032-40a72 72 0 01-45 17a72 72 0 00-122 65a200 200 0 01-145-74a72 72 0 0022 94a72 72 0 01-32-7a72 72 0 0056 69a72 72 0 01-32 1a72 72 0 0067 50a200 200 0 01-105 29a200 200 0 00309-179a200 200 0 0035-37"
+                />
+              </svg>
+              <h2 class="sm:hidden text-4xl font-bold pb-4">Twitter</h2>
+              <p class="sm:hidden text-lg font-semibold text-slate-500">
+                Slide into my DM's
+              </p>
+            </a>
+          </li>
+          <li class="clear-both py-4 sm:py-0">
+            <a
+              href="https://www.facebook.com/daniel.knell"
+              @mouseover="set('Facebook', 'Lets be friends')"
+              @mouseout="set(null, null)"
+              class="sm:hover:animate-pop focus:animate-pop block sm:opacity-50 hover:opacity-100 focus:opacity-100 origin-center block"
+            >
+              <svg class="h-32 float-left sm:float-none mr-4" viewBox="0 0 512 512">
+                <rect width="512" height="512" rx="15%" fill="#1877f2" />
+                <path
+                  d="M355.6 330l11.4-74h-71v-48c0-20.2 9.9-40 41.7-40H370v-63s-29.3-5-57.3-5c-58.5 0-96.7 35.4-96.7 99.6V256h-65v74h65v182h80V330h59.6z"
+                  fill="#fff"
+                />
+              </svg>
+              <h2 class="sm:hidden text-4xl font-bold pb-4">Facebook</h2>
+              <p class="sm:hidden text-lg font-semibold text-slate-500">
+                Lets be friends
+              </p>
+            </a>
+          </li>
+          <li class="clear-both py-4 sm:py-0">
+            <a
+              href="https://www.linkedin.com/in/danielknell/"
+              @mouseover="set('LinkedIn', 'Hire me')"
+              @mouseout="set(null, null)"
+              class="sm:hover:animate-pop focus:animate-pop block sm:opacity-50 hover:opacity-100 focus:opacity-100 origin-center block"
+            >
+              <svg
+                class="h-32 float-left sm:float-none mr-4"
+                viewBox="0 0 512 512"
+                fill="#fff"
+              >
+                <rect width="512" height="512" rx="15%" fill="#0077b5" />
+                <circle cx="142" cy="138" r="37" />
+                <path stroke="#fff" stroke-width="66" d="M244 194v198M142 194v198" />
+                <path
+                  d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32"
+                />
+              </svg>
+              <h2 class="sm:hidden text-4xl font-bold pb-4">LinkedIn</h2>
+              <p class="sm:hidden text-lg font-semibold text-slate-500">Hire me</p>
+            </a>
+          </li>
+          <li class="clear-both py-4 sm:py-0">
+            <a
+              href="mailto:contact@danielknell.co.uk?subject=Hello"
+              @mouseover="set('Email', 'Ruin my inbox-zero')"
+              @mouseout="set(null, null)"
+              class="sm:hover:animate-pop focus:animate-pop block sm:opacity-50 hover:opacity-100 focus:opacity-100 origin-center block"
+            >
+              <svg class="h-32 float-left sm:float-none mr-4" viewBox="0 0 512 512">
+                <rect width="512" height="512" rx="15%" fill="#fff" />
+                <path d="M158 391v-142l-82-63V361q0 30 30 30" fill="#4285f4" />
+                <path d="M 154 248l102 77l102-77v-98l-102 77l-102-77" fill="#ea4335" />
+                <path d="M354 391v-142l82-63V361q0 30-30 30" fill="#34a853" />
+                <path d="M76 188l82 63v-98l-30-23c-27-21-52 0-52 26" fill="#c5221f" />
+                <path d="M436 188l-82 63v-98l30-23c27-21 52 0 52 26" fill="#fbbc04" />
+              </svg>
+              <h2 class="sm:hidden text-4xl font-bold pb-4">Email</h2>
+              <p class="sm:hidden text-lg font-semibold text-slate-500">
+                Ruin my inbox-zero
+              </p>
+            </a>
+          </li>
+          <li class="clear-both"></li>
+        </ul>
+      </div>
+      <footer class="py-4 bg-slate-700 text-slate-200 text-center">
+        <p><span class="hidden sm:inline" x-text="footer"></span>&nbsp;</p>
+      </footer>
+    </div>
+  </body>
+</html>
