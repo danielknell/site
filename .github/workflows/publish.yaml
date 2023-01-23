@@ -28,7 +28,7 @@ jobs:
 
       - name: setup pages
         id: pages
-        uses: actions/configure-pages@v2
+        uses: actions/configure-pages@v3
 
       - name: set node version
         uses: actions/setup-node@v3
