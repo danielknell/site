@@ -14,7 +14,7 @@
     }
   },
   "dependencies": {
-    "alpinejs": "^3.12.1",
+    "alpinejs": "^3.12.3",
     "parcel": "^2.9.3",
     "parcel-reporter-static-files-copy": "^1.5.0",
     "postcss": "^8.4.24",
